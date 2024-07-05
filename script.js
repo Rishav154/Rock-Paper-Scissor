@@ -69,4 +69,7 @@ function checkResult(userChoice) {
   scoreUpdater();
 
   document.querySelector(".js-result").innerHTML = result;
+  document.querySelector(
+    ".choice-display"
+  ).innerHTML = `(You) ${userChoice} -- ${computerChoice} (computer)`;
 }

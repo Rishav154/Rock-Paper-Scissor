@@ -24,6 +24,8 @@
 
   <p class="result js-result"></p>
 
+  <p class="choice-display"></p>
+
   <p class="score js-score">Wins: 0, Loses: 0, Ties: 0</p>
 
   <button class="reset-score" onclick="
@@ -31,7 +33,7 @@
       score.losses = 0;
       score.ties = 0;
       localStorage.removeItem('score');
-      updateScoreElement();">
+      scoreUpdater();">
     Reset score
   </button>
 
